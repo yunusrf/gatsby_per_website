@@ -5,7 +5,7 @@ yarn-error.log
 package-lock.json
 
 # Build directory
-# /public - removed because static assets need to be tracked
+/public
 .DS_Store
 
 .vscode/
