@@ -5,6 +5,68 @@
         {
           "node": {
             "frontmatter": {
+              "title": "Online Library Fees & Fines Payment System",
+              "cover": {
+                "childImageSharp": {
+                  "gatsbyImageData": {
+                    "layout": "constrained",
+                    "placeholder": {
+                      "fallback": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAACO0lEQVR42lWTyW4UMRiE8768DI+AuHLkBAek3DggRUGQAwgmCdEkvbnd3u1eivrdmQm0VHL3jP25/u0ieAfnHJRSaNsWl5/e4PrqI7yPmKbpLGssgg//KcaImBJCzsglo5QZF2PfQquB6jGNAw4/v+DxeEAsQEgzfJx5aMVRa9xxT28dOsI7rjbkuseFgkzoOkdcqK7BOPRQbYOhfYLVBs4XTJSV1WVom/CjOeL74x/cca/otu/QTnb/3+1ACLA6FCDBFc5vYwMcnQVqtBEPQaHJBt/UPb72t7juDvhlGzzlCUc3EloYRcG2JAF2u8NnmMCtzxUomlxEWmfkbcGCFe9uLvH54Qby5I0poTNx6eMJSMALkHDm04WZ+dkl4WLD+Xn1/jXeXn2o79u21UKIQ89c/gPsag4FqMeRzpZnh0u9PWWpYOGaYILj4YB5oWMq5cLfSi3OGagIOjmc9ATHqp6AUhjnPNvEs5U8v10FidZ1rUCJJKTlBBzOQFmN9Fte6WJhflYY5lMObyvDW2YoN8E4i8T+y1RMuQJjPjlkQ+/Atq6WbmIhLERWOdJRorPAiwz6rsPh9wEd16Zp6iBY9qNEI2degNyg+h3oCPIxQeuBjS4pGBFCwPA8SXf393VCpO9EcpGZNFIMp5AVhuqOYj7FjbMaRjN83VeoZ4h65MVMT9M8cRR1HVdPiSFpt8AzawmcFG4a2t2dFMhNitPSVaAzA2/foXZkN/QNwz5Wjaqh+72ghiMrwBwM/gJ+v+HDfj7h+wAAAABJRU5ErkJggg=="
+                    },
+                    "images": {
+                      "fallback": {
+                        "src": "/static/1069de4853c9897e5f064ad7173314ec/ef8d5/payment_work_flow_1.png",
+                        "srcSet": "/static/1069de4853c9897e5f064ad7173314ec/57a76/payment_work_flow_1.png 175w,\n/static/1069de4853c9897e5f064ad7173314ec/4f2d3/payment_work_flow_1.png 350w,\n/static/1069de4853c9897e5f064ad7173314ec/ef8d5/payment_work_flow_1.png 700w,\n/static/1069de4853c9897e5f064ad7173314ec/97304/payment_work_flow_1.png 1400w",
+                        "sizes": "(min-width: 700px) 700px, 100vw"
+                      },
+                      "sources": [
+                        {
+                          "srcSet": "/static/1069de4853c9897e5f064ad7173314ec/50167/payment_work_flow_1.avif 175w,\n/static/1069de4853c9897e5f064ad7173314ec/2414d/payment_work_flow_1.avif 350w,\n/static/1069de4853c9897e5f064ad7173314ec/98355/payment_work_flow_1.avif 700w,\n/static/1069de4853c9897e5f064ad7173314ec/148ae/payment_work_flow_1.avif 1400w",
+                          "type": "image/avif",
+                          "sizes": "(min-width: 700px) 700px, 100vw"
+                        },
+                        {
+                          "srcSet": "/static/1069de4853c9897e5f064ad7173314ec/81b0f/payment_work_flow_1.webp 175w,\n/static/1069de4853c9897e5f064ad7173314ec/cf1dd/payment_work_flow_1.webp 350w,\n/static/1069de4853c9897e5f064ad7173314ec/238e2/payment_work_flow_1.webp 700w,\n/static/1069de4853c9897e5f064ad7173314ec/e1a3a/payment_work_flow_1.webp 1400w",
+                          "type": "image/webp",
+                          "sizes": "(min-width: 700px) 700px, 100vw"
+                        }
+                      ]
+                    },
+                    "width": 700,
+                    "height": 469
+                  }
+                }
+              },
+              "tech": [
+                "Python",
+                "Django",
+                "RESTful APIs",
+                "PostgreSQL",
+                "API Integration",
+                "Payment Gateway",
+                "OAuth2",
+                "Microservices",
+                "Docker",
+                "Celery",
+                "Redis",
+                "Bootstrap",
+                "JavaScript",
+                "Tableau",
+                "pytest",
+                "Selenium",
+                "Ansible",
+                "CI/CD"
+              ],
+              "github": "https://github.com/yunusparvej/library-payment-system",
+              "external": "https://library.kfupm.edu.sa/payment",
+              "cta": null
+            },
+            "html": "<p>A comprehensive Django-based web application that revolutionizes library fee and fine payments through secure online transactions. Built for KFUPM's library system, this solution streamlines the payment process for thousands of students and faculty members.</p>\n<p>The system features seamless integration with MEDAD Library Services Platform APIs for real-time fee retrieval and KFUPM ePay APIs for secure payment processing. Key highlights include automated transaction reconciliation, comprehensive admin dashboards with Tableau analytics, OAuth2 authentication, CSRF protection, and asynchronous payment processing using Celery for optimal performance.</p>\n<p>Developed with modern web technologies including PostgreSQL database optimization, Docker containerization, and extensive testing coverage using pytest and Selenium. The application significantly reduced manual payment processing time and improved user experience across the university campus.</p>"
+          }
+        },
+        {
+          "node": {
+            "frontmatter": {
               "title": "Halcyon Theme",
               "cover": {
                 "childImageSharp": {
@@ -86,6 +148,70 @@
               "cta": null
             },
             "html": "<p>A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>"
+          }
+        },
+        {
+          "node": {
+            "frontmatter": {
+              "title": "ICT Market Analytics Platform - Qlik Sense & QAP",
+              "cover": {
+                "childImageSharp": {
+                  "gatsbyImageData": {
+                    "layout": "constrained",
+                    "placeholder": {
+                      "fallback": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAAAsTAAALEwEAmpwYAAACO0lEQVR42lWTyW4UMRiE8768DI+AuHLkBAek3DggRUGQAwgmCdEkvbnd3u1eivrdmQm0VHL3jP25/u0ieAfnHJRSaNsWl5/e4PrqI7yPmKbpLGssgg//KcaImBJCzsglo5QZF2PfQquB6jGNAw4/v+DxeEAsQEgzfJx5aMVRa9xxT28dOsI7rjbkuseFgkzoOkdcqK7BOPRQbYOhfYLVBs4XTJSV1WVom/CjOeL74x/cca/otu/QTnb/3+1ACLA6FCDBFc5vYwMcnQVqtBEPQaHJBt/UPb72t7juDvhlGzzlCUc3EloYRcG2JAF2u8NnmMCtzxUomlxEWmfkbcGCFe9uLvH54Qby5I0poTNx6eMJSMALkHDm04WZ+dkl4WLD+Xn1/jXeXn2o79u21UKIQ89c/gPsag4FqMeRzpZnh0u9PWWpYOGaYILj4YB5oWMq5cLfSi3OGagIOjmc9ATHqp6AUhjnPNvEs5U8v10FidZ1rUCJJKTlBBzOQFmN9Fte6WJhflYY5lMObyvDW2YoN8E4i8T+y1RMuQJjPjlkQ+/Atq6WbmIhLERWOdJRorPAiwz6rsPh9wEd16Zp6iBY9qNEI2degNyg+h3oCPIxQeuBjS4pGBFCwPA8SXf393VCpO9EcpGZNFIMp5AVhuqOYj7FjbMaRjN83VeoZ4h65MVMT9M8cRR1HVdPiSFpt8AzawmcFG4a2t2dFMhNitPSVaAzA2/foXZkN/QNwz5Wjaqh+72ghiMrwBwM/gJ+v+HDfj7h+wAAAABJRU5ErkJggg=="
+                    },
+                    "images": {
+                      "fallback": {
+                        "src": "/static/1069de4853c9897e5f064ad7173314ec/ef8d5/qlik-analytics.png",
+                        "srcSet": "/static/1069de4853c9897e5f064ad7173314ec/57a76/qlik-analytics.png 175w,\n/static/1069de4853c9897e5f064ad7173314ec/4f2d3/qlik-analytics.png 350w,\n/static/1069de4853c9897e5f064ad7173314ec/ef8d5/qlik-analytics.png 700w,\n/static/1069de4853c9897e5f064ad7173314ec/97304/qlik-analytics.png 1400w",
+                        "sizes": "(min-width: 700px) 700px, 100vw"
+                      },
+                      "sources": [
+                        {
+                          "srcSet": "/static/1069de4853c9897e5f064ad7173314ec/50167/qlik-analytics.avif 175w,\n/static/1069de4853c9897e5f064ad7173314ec/2414d/qlik-analytics.avif 350w,\n/static/1069de4853c9897e5f064ad7173314ec/98355/qlik-analytics.avif 700w,\n/static/1069de4853c9897e5f064ad7173314ec/148ae/qlik-analytics.avif 1400w",
+                          "type": "image/avif",
+                          "sizes": "(min-width: 700px) 700px, 100vw"
+                        },
+                        {
+                          "srcSet": "/static/1069de4853c9897e5f064ad7173314ec/81b0f/qlik-analytics.webp 175w,\n/static/1069de4853c9897e5f064ad7173314ec/cf1dd/qlik-analytics.webp 350w,\n/static/1069de4853c9897e5f064ad7173314ec/238e2/qlik-analytics.webp 700w,\n/static/1069de4853c9897e5f064ad7173314ec/e1a3a/qlik-analytics.webp 1400w",
+                          "type": "image/webp",
+                          "sizes": "(min-width: 700px) 700px, 100vw"
+                        }
+                      ]
+                    },
+                    "width": 700,
+                    "height": 469
+                  }
+                }
+              },
+              "tech": [
+                "Qlik Sense",
+                "Qlik Analytics Platform",
+                "JavaScript",
+                "Qlik Extensions",
+                "RESTful APIs",
+                "Business Intelligence",
+                "Data Visualization",
+                "Qualtrics APIs",
+                "Survey Analytics",
+                "Bootstrap",
+                "HTML/CSS",
+                "Responsive Design",
+                "Mashup Development",
+                "KPI Development",
+                "Dashboard Design",
+                "ETL Processing",
+                "Automation Scripts",
+                "Government Compliance",
+                "Multi-language Support",
+                "Large Scale Data Processing"
+              ],
+              "github": "https://github.com/yunusparvej/ict-market-analytics",
+              "external": "https://ictind.citc.gov.sa/hub/stream/aaec8d41-5201-43ab-809f-3063750dfafd",
+              "cta": null
+            },
+            "html": "<p>A comprehensive <strong>Business Intelligence platform</strong> built with Qlik Sense and QAP for Saudi Arabia's Communications and Information Technology Commission (CITC). The system analyzes ICT market development through advanced data visualization and custom JavaScript extensions.</p>\n<p><strong>Key Highlights:</strong></p>\n<ul>\n<li><strong>11,500+ survey samples</strong> processed with real-time analytics</li>\n<li><strong>Custom Qlik Sense extensions</strong> developed with JavaScript and HTML5/CSS3</li>\n<li><strong>Qualtrics API integration</strong> for automated survey data synchronization</li>\n<li><strong>3 comprehensive applications</strong> with 32+ KPIs and 330+ interactive visualizations</li>\n<li><strong>Multi-language support</strong> including Arabic RTL localization</li>\n<li><strong>Government-grade security</strong> with role-based access control</li>\n</ul>\n<p>Built responsive mashup applications using Qlik Analytics Platform APIs and Bootstrap framework. The platform enables CITC to analyze telecommunications investment patterns and technology adoption trends, supporting strategic policy decisions for Saudi Arabia's national digital transformation initiatives.</p>\n<p><strong>Business Impact:</strong> Transformed how CITC analyzes ICT market data, enabling data-driven policy decisions for national digital transformation (2017-2019).</p>"
           }
         },
         {

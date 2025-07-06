@@ -56,6 +56,17 @@ const StyledProject = styled.li`
         padding: 25px 25px 20px;
       }
     }
+
+    .project-description {
+      text-align: left;
+      margin-left: auto;
+      margin-right: 0;
+
+      @media (max-width: 768px) {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
     .project-tech-list {
       justify-content: flex-end;
 
@@ -64,10 +75,10 @@ const StyledProject = styled.li`
       }
 
       li {
-        margin: 0 0 5px 20px;
+        margin: 0 0 8px 8px;
 
         @media (max-width: 768px) {
-          margin: 0 10px 5px 0;
+          margin: 0 6px 6px 0;
         }
       }
     }
@@ -160,11 +171,36 @@ const StyledProject = styled.li`
     background-color: var(--light-navy);
     color: var(--light-slate);
     font-size: var(--fz-lg);
+    text-align: left;
+    line-height: 1.6;
+    max-height: 350px;
+    overflow-y: auto;
+
+    /* Custom scrollbar styling */
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--navy);
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--green);
+      border-radius: 3px;
+
+      &:hover {
+        background: var(--light-green);
+      }
+    }
 
     @media (max-width: 768px) {
       padding: 20px 0;
       background-color: transparent;
       box-shadow: none;
+      max-height: none;
+      overflow-y: visible;
 
       &:hover {
         box-shadow: none;
@@ -179,6 +215,24 @@ const StyledProject = styled.li`
       color: var(--white);
       font-weight: normal;
     }
+
+    /* Improve spacing for lists */
+    ul {
+      margin: 15px 0;
+
+      li {
+        margin-bottom: 8px;
+      }
+    }
+
+    /* Better paragraph spacing */
+    p {
+      margin-bottom: 15px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .project-tech-list {
@@ -191,19 +245,38 @@ const StyledProject = styled.li`
     list-style: none;
 
     li {
-      margin: 0 20px 5px 0;
+      margin: 0 8px 8px 0;
+      padding: 6px 12px;
+      background-color: var(--navy);
+      border: 1px solid var(--light-navy);
+      border-radius: 4px;
       color: var(--light-slate);
       font-family: var(--font-mono);
       font-size: var(--fz-xs);
       white-space: nowrap;
+      transition: var(--transition);
+
+      &:hover {
+        background-color: var(--light-navy);
+        border-color: var(--green);
+        color: var(--lightest-slate);
+        transform: translateY(-2px);
+      }
     }
 
     @media (max-width: 768px) {
       margin: 10px 0;
 
       li {
-        margin: 0 10px 5px 0;
+        margin: 0 6px 6px 0;
+        padding: 4px 8px;
         color: var(--lightest-slate);
+        background-color: rgba(100, 255, 218, 0.1);
+        border-color: var(--green);
+
+        &:hover {
+          background-color: rgba(100, 255, 218, 0.2);
+        }
       }
     }
   }
