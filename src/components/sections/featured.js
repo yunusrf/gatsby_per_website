@@ -338,9 +338,11 @@ const StyledProject = styled.li`
         background: transparent;
         outline: 0;
 
-        &:before,
+        &:before {
+          opacity: 0;
+        }
+
         .img {
-          background: transparent;
           filter: none;
         }
       }
@@ -356,15 +358,15 @@ const StyledProject = styled.li`
         bottom: 0;
         z-index: 3;
         transition: var(--transition);
-        background-color: var(--navy);
-        mix-blend-mode: screen;
+        background-color: var(--green);
+        opacity: 0.3;
       }
     }
 
     .img {
       border-radius: var(--border-radius);
-      mix-blend-mode: multiply;
-      filter: grayscale(100%) contrast(1) brightness(90%);
+      transition: var(--transition);
+      filter: grayscale(20%) contrast(1.1) brightness(0.9);
 
       @media (max-width: 768px) {
         object-fit: cover;

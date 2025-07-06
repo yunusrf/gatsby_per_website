@@ -167,6 +167,26 @@ npm update
 npm outdated
 ```
 
+### Kill Processes Running on Ports
+
+```bash
+# Kill process running on port 8000 (development server)
+sudo lsof -t -i:8000 | xargs kill -9
+
+# Kill process running on port 9000 (production preview)
+sudo lsof -t -i:9000 | xargs kill -9
+
+# Alternative method - find and kill specific port
+lsof -ti:8000 | xargs kill -9
+
+# Kill all node processes (use with caution)
+pkill -f node
+
+# Find what's running on a specific port
+lsof -i :8000
+netstat -tulpn | grep :8000
+```
+
 ### GraphQL Issues
 
 ```bash
@@ -225,9 +245,9 @@ npm run build
 
 ## 🔗 Important URLs
 
-- **Development:** http://localhost:8000
-- **GraphQL Explorer:** http://localhost:8000/\_\_\_graphql
-- **Production Build Preview:** npm run serve (http://localhost:9000)
+- **Development:** <http://localhost:8000>
+- **GraphQL Explorer:** <http://localhost:8000/___graphql>
+- **Production Build Preview:** npm run serve (<http://localhost:9000>)
 
 ## 📱 Features Implemented
 
