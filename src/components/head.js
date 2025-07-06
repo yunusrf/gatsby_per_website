@@ -43,11 +43,11 @@ const Head = ({ title, description, image }) => {
       <meta name="image" content={seo.image} />
 
       {/* Favicon */}
-      <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-      <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+      <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=y2025" />
+      <link rel="icon" type="image/x-icon" href="/favicon.ico?v=y2025" />
+      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=y2025" />
+      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=y2025" />
+      <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png?v=y2025" />
 
       <meta property="og:title" content={seo.title} />
       <meta property="og:description" content={seo.description} />

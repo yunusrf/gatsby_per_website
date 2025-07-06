@@ -1,0 +1,27 @@
+# Build directories
+public/
+.cache/
+node_modules/
+
+# Generated files
+*.ico
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.webp
+
+# Temporary files
+generate-favicon.js
+create-y-favicon.js
+update-favicon.js
+generate-all-favicons.js
+generate-ico.js
+
+# Build output
+dist/
+build/
+
+# Logs
+*.log
