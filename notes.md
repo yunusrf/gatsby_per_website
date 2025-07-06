@@ -233,7 +233,7 @@ npm run build
 
 - ✅ Dark/Light theme toggle
 - ✅ Responsive design
-- ✅ Featured projects showcase
+- ✅ Featured projects showcase (Currently: Citc_qliksense, Online_fees_payment)
 - ✅ Blog posts with markdown
 - ✅ Work experience timeline
 - ✅ Contact form
@@ -250,3 +250,5 @@ npm run build
 3. **Update resume.pdf in `/static/` folder when needed**
 4. **Favicon files are in `/static/` - don't edit `/public/` files**
 5. **Content is in markdown format in `/content/` folders**
+6. **Featured projects are in `/content/featured/` - currently includes Citc_qliksense and Online_fees_payment**
+7. **Removed SpotifyProfile, SpotifyProfileV2, and HalcyonTheme projects as requested**
