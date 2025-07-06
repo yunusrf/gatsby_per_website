@@ -2,8 +2,8 @@
 date: '0'
 title: 'Online Library Fees & Fines Payment System'
 cover: './payment_work_flow_1.png'
-github: 'https://github.com/yunusparvej/library-payment-system'
-external: 'https://library.kfupm.edu.sa/payment'
+# github: 'https://github.com/yunusparvej/library-payment-system'
+# external: 'https://library.kfupm.edu.sa/payment'
 tech:
   - Python
   - Django

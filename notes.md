@@ -255,7 +255,7 @@ npm run build
 - ✅ Responsive design
 - ✅ Featured projects showcase (Currently: Citc_qliksense, Online_fees_payment)
 - ✅ Blog posts with markdown
-- ✅ Work experience timeline
+- ✅ Work experience timeline with scrollable job descriptions
 - ✅ Contact form
 - ✅ Resume download
 - ✅ Social media links

@@ -1,5 +1,5 @@
 ---
-date: '2'
+date: '1'
 title: 'ICT Market Analytics Platform - Qlik Sense & QAP'
 cover: './qlik-analytics.png'
 github: 'https://github.com/yunusparvej/ict-market-analytics'

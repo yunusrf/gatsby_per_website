@@ -162,6 +162,53 @@ const StyledTabPanel = styled.div`
     font-family: var(--font-mono);
     font-size: var(--fz-xs);
   }
+
+  .job-description {
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 10px;
+
+    /* Custom scrollbar styling */
+    &::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--navy);
+      border-radius: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--dark-slate);
+      border-radius: 4px;
+
+      &:hover {
+        background: var(--slate);
+      }
+    }
+
+    /* Firefox scrollbar */
+    scrollbar-width: thin;
+    scrollbar-color: var(--dark-slate) var(--navy);
+
+    /* Smooth scrolling */
+    scroll-behavior: smooth;
+
+    /* Better spacing for long content */
+    line-height: 1.6;
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    ul {
+      margin-bottom: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  }
 `;
 
 const Jobs = () => {
@@ -299,7 +346,7 @@ const Jobs = () => {
                       {location && <span> | {location}</span>}
                     </p>
 
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
+                    <div className="job-description" dangerouslySetInnerHTML={{ __html: html }} />
                   </StyledTabPanel>
                 </CSSTransition>
               );
