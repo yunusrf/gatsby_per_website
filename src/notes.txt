@@ -1,0 +1,6 @@
+Styled Technical Skills Table: A professionally styled table that matches your site's design theme with:
+
+Dark navy background with green accents
+Proper spacing and typography
+Responsive design that adapts to mobile screens
+Hover effects and proper visual hierarchy

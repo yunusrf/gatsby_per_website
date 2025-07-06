@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components';
 import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
-import { Menu } from '@components';
+import { Menu, ThemeToggle } from '@components';
 import { IconLogo, IconHex } from '@components/icons';
 
 const StyledHeader = styled.header`
@@ -150,6 +150,16 @@ const StyledLinks = styled.div`
   }
 `;
 
+const StyledRightSide = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
 const Nav = ({ isHome }) => {
   const [isMounted, setIsMounted] = useState(!isHome);
   const scrollDirection = useScrollDirection('down');
@@ -230,6 +240,10 @@ const Nav = ({ isHome }) => {
               <div>{ResumeLink}</div>
             </StyledLinks>
 
+            <StyledRightSide>
+              <ThemeToggle />
+            </StyledRightSide>
+
             <Menu />
           </>
         ) : (
@@ -267,6 +281,19 @@ const Nav = ({ isHome }) => {
                 )}
               </TransitionGroup>
             </StyledLinks>
+
+            <StyledRightSide>
+              <TransitionGroup component={null}>
+                {isMounted && (
+                  <CSSTransition classNames={fadeDownClass} timeout={timeout}>
+                    <div
+                      style={{ transitionDelay: `${isHome ? (navLinks.length + 1) * 100 : 0}ms` }}>
+                      <ThemeToggle />
+                    </div>
+                  </CSSTransition>
+                )}
+              </TransitionGroup>
+            </StyledRightSide>
 
             <TransitionGroup component={null}>
               {isMounted && (

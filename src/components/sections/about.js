@@ -45,6 +45,78 @@ const StyledText = styled.div`
       }
     }
   }
+
+  .technical-skills {
+    margin-top: 40px;
+
+    h3 {
+      margin-bottom: 20px;
+      color: var(--green);
+      font-family: var(--font-mono);
+      font-size: var(--fz-lg);
+    }
+
+    .skills-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background: var(--navy);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: 0 10px 30px -15px var(--navy-shadow);
+
+      th {
+        background: var(--dark-navy);
+        color: var(--green);
+        padding: 15px 20px;
+        text-align: left;
+        font-family: var(--font-mono);
+        font-size: var(--fz-sm);
+        font-weight: 600;
+        border-bottom: 1px solid var(--navy);
+      }
+
+      td {
+        padding: 12px 20px;
+        border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+        vertical-align: top;
+
+        &:first-child {
+          font-family: var(--font-mono);
+          font-weight: 600;
+          color: var(--green);
+          width: 180px;
+          font-size: var(--fz-sm);
+        }
+
+        &:last-child {
+          font-size: var(--fz-xs);
+          line-height: 1.5;
+          color: var(--slate);
+        }
+      }
+
+      tr:last-child td {
+        border-bottom: none;
+      }
+
+      @media (max-width: 768px) {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+
+        th,
+        td {
+          padding: 10px 15px;
+          font-size: var(--fz-xxs);
+        }
+
+        td:first-child {
+          width: 120px;
+        }
+      }
+    }
+  }
 `;
 const StyledPic = styled.div`
   position: relative;
@@ -60,7 +132,7 @@ const StyledPic = styled.div`
     display: block;
     position: relative;
     width: 100%;
-    border-radius: var(--border-radius);
+    border-radius: ${props => (props.round ? '50%' : 'var(--border-radius)')};
     background-color: var(--green);
 
     &:hover,
@@ -80,10 +152,12 @@ const StyledPic = styled.div`
 
     .img {
       position: relative;
-      border-radius: var(--border-radius);
+      border-radius: ${props => (props.round ? '50%' : 'var(--border-radius)')};
       mix-blend-mode: multiply;
       filter: grayscale(100%) contrast(1);
       transition: var(--transition);
+      aspect-ratio: ${props => (props.round ? '1' : 'auto')};
+      object-fit: cover;
     }
 
     &:before,
@@ -93,7 +167,7 @@ const StyledPic = styled.div`
       position: absolute;
       width: 100%;
       height: 100%;
-      border-radius: var(--border-radius);
+      border-radius: ${props => (props.round ? '50%' : 'var(--border-radius)')};
       transition: var(--transition);
     }
 
@@ -127,6 +201,68 @@ const About = () => {
 
   const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
 
+  const technicalSkills = [
+    {
+      category: 'Programming',
+      technologies:
+        'Microsoft .NET (C#, ASP.NET), iOS (Objective–C, Swift), C, C++, Symbian C++, Python',
+    },
+    {
+      category: 'Development Tools',
+      technologies:
+        'Microsoft Visual C++, Visual Studio, Visual Studio Code, Eclipse, X-Code, Android Studio, PyCharm, Jupyter Notebook, EB Guide Studio, Git, Docker, Kubernetes, Github Actions',
+    },
+    {
+      category: 'Frameworks/Platforms',
+      technologies:
+        'Microsoft Foundation Class (MFC), Windows Presentation Foundation (WPF), Entity Framework, ADO.NET, Qualtrics Survey Platform, Nuance SR and TTS engine, Qlik Sense, Qlik Analytics Platform, Qlik Sense Developer tools, Open XML SDK for Microsoft Office, FORM (WorldAPP\'s) Enterprise Data Collection Platform, KeySurvey APIs, Selenium HQ Automation, Dask, MLflow, Gradio, Opencv, PyTorch Lightning, PyQt5, Django Framework',
+    },
+    {
+      category: 'Analytics and BI Tools',
+      technologies:
+        'Qlik Sense, Qlik Analytics Platform, Tableau, Oracle Fusion Analytics, Power BI, Microsoft Excel, Google Analytics, Google Data Studio',
+    },
+    {
+      category: 'Cloud Platforms',
+      technologies: 'AWS, Azure, Google Cloud Platform',
+    },
+    {
+      category: 'Web',
+      technologies:
+        'Javascript, Typescript, React, jQuery, Bootstrap, React JS, Node.js, Express.js, Eleventy, WordPress, HTML5, CSS3, SASS, LESS',
+    },
+    {
+      category: 'Database',
+      technologies: 'Microsoft SQL Server, MySQL, PostgreSQL, Redis, MongoDB',
+    },
+    {
+      category: 'Design Tools',
+      technologies: 'Enterprise Architect, Visual Studio, Microsoft Visio',
+    },
+    {
+      category: 'Operating Systems',
+      technologies: 'macOS, Windows Server, Windows 10/11, Linux Redhat',
+    },
+    {
+      category: 'Python',
+      technologies: 'Django Framework, PyQt5',
+    },
+    {
+      category: 'Data Science Packages',
+      technologies:
+        'Scikit-Learn, Tensorflow, PyTorch, NumPy, SciPy, Pandas, XGBoost/LightGBM, Matplotlib, Seaborn, StatsModels',
+    },
+    {
+      category: 'Statistics/ML',
+      technologies: 'Linear/ Logistic Regression, SVM, Ensemble Trees, Random Forest',
+    },
+    {
+      category: 'Others',
+      technologies:
+        'Service-Oriented Architecture (SOA), RFID, NFC, CI/CD (Continuous Integration and Continuous Delivery (or Continuous Deployment)), Ansible',
+    },
+  ];
+
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
       <h2 className="numbered-heading">About Me</h2>
@@ -134,31 +270,33 @@ const About = () => {
       <div className="inner">
         <StyledText>
           <div>
+            <p>Hello! My name is Yunus Parvej Faniband.</p>
             <p>
-              Hello! My name is Brittany and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              With over 20 years of experience as a senior technical professional, I specialize in
+              the architecture, implementation, and management of software products across mobile
+              and Windows platforms. My expertise spans system software development, analysis, and
+              design, with a strong focus on native mobile application development, backend and
+              infrastructure solutions, as well as desktop and web development.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
-              <a href="https://us.mullenlowe.com/">an advertising agency</a>,{' '}
-              <a href="https://starry.com/">a start-up</a>,{' '}
-              <a href="https://www.apple.com/">a huge corporation</a>, and{' '}
-              <a href="https://scout.camd.northeastern.edu/">a student-led design studio</a>. My
-              main focus these days is building accessible, inclusive products and digital
-              experiences at <a href="https://upstatement.com/">Upstatement</a> for a variety of
-              clients.
+              I have a solid background in data analysis, predictive modeling, and data
+              visualization, utilizing machine learning and deep learning techniques to drive
+              business insights. As both a leader and a dedicated team player, I am passionate about
+              developing effective problem-solving strategies for complex challenges and
+              continuously learning new technologies and tools as needed.
             </p>
-
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              Throughout my career, I have been actively involved in design reviews, technical
+              document preparation, and comprehensive documentation at every phase of the software
+              development life cycle. I regularly create technical proposals, conduct requirement
+              analysis, lead estimation processes, and mentor engineering teams.
+            </p>
+            <p>
+              Additionally, I assist in writing grant proposals and securing funding for research
+              initiatives. My experience includes analyzing and interpreting research data, as well
+              as preparing reports, publications, and presentations to effectively share findings
+              with diverse audiences.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
@@ -167,9 +305,29 @@ const About = () => {
           <ul className="skills-list">
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
+
+          <div className="technical-skills">
+            <h3>Technical Skills</h3>
+            <table className="skills-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Technologies</th>
+                </tr>
+              </thead>
+              <tbody>
+                {technicalSkills.map((skillGroup, i) => (
+                  <tr key={i}>
+                    <td>{skillGroup.category}</td>
+                    <td>{skillGroup.technologies}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </StyledText>
 
-        <StyledPic>
+        <StyledPic round={true}>
           <div className="wrapper">
             <StaticImage
               className="img"
@@ -177,7 +335,7 @@ const About = () => {
               width={500}
               quality={95}
               formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
+              alt="Yunus Parvej"
             />
           </div>
         </StyledPic>

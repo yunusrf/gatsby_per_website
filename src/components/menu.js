@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import { navLinks } from '@config';
 import { KEY_CODES } from '@utils';
 import { useOnClickOutside } from '@hooks';
+import { ThemeToggle } from '@components';
 
 const StyledMenu = styled.div`
   display: none;
@@ -153,6 +154,12 @@ const StyledSidebar = styled.aside`
     margin: 10% auto 0;
     width: max-content;
   }
+
+  .theme-toggle-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
 `;
 
 const Menu = () => {
@@ -269,6 +276,10 @@ const Menu = () => {
             <a href="/resume.pdf" className="resume-link">
               Resume
             </a>
+
+            <div className="theme-toggle-container">
+              <ThemeToggle />
+            </div>
           </nav>
         </StyledSidebar>
       </div>
