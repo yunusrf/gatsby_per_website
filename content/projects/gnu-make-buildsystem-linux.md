@@ -13,7 +13,7 @@ tech:
   - Perforce
   - Build Automation
   - Configuration Management
-company: 'Symbian Software India Private Limited'
+company: 'Symbian Software India Private Limited / Nokia Corporation'
 showInProjects: true
 ---
 

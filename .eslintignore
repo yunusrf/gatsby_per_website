@@ -1,3 +1,9 @@
+gatsby-config.js
+gatsby-node.js
+gatsby-browser.js
+gatsby-ssr.js
+prettier.config.js
+
 # Build directories
 public/
 .cache/

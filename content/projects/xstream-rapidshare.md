@@ -1,5 +1,5 @@
 ---
-date: '2006-07-01'
+date: '2002-03-01'
 title: 'Xstream Rapid Share: Enterprise Collaboration & Messaging Platform'
 github: ''
 external: ''

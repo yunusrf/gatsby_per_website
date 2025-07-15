@@ -1,5 +1,5 @@
 ---
-date: '2005-07-01'
+date: '2003-07-01'
 title: 'OEB Book Reader for goReader Wireless eBook'
 github: ''
 external: ''

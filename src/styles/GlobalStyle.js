@@ -5,6 +5,10 @@ import TransitionStyles from './TransitionStyles';
 import PrismStyles from './PrismStyles';
 
 const GlobalStyle = createGlobalStyle`
+  /* Force navLinks to white in light mode for visibility on dark header */
+  .light-mode header nav li a {
+    color: #fff !important;
+  }
   ${fonts};
   ${variables};
 

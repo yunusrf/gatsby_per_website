@@ -15,7 +15,7 @@ tech:
   - REST APIs
   - Apple Maps
   - Localization (English/Arabic)
-company: 'Consultant'
+company: 'Consultant (NEARMOTION Company, Saudi Arabia)'
 showInProjects: true
 ---
 

@@ -12,7 +12,7 @@ tech:
   - Enterprise Architect
   - Unit Testing
   - Quality Tools (Lint, Leavescan)
-company: 'Symbian Software India Private Limited'
+company: 'Symbian Software India Private Limited / Nokia Corporation'
 showInProjects: true
 ---
 

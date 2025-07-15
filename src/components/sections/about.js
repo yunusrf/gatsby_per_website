@@ -199,8 +199,6 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
-
   const technicalSkills = [
     {
       category: 'Programming',
@@ -298,13 +296,7 @@ const About = () => {
               as preparing reports, publications, and presentations to effectively share findings
               with diverse audiences.
             </p>
-
-            <p>Here are a few technologies I’ve been working with recently:</p>
           </div>
-
-          <ul className="skills-list">
-            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-          </ul>
 
           <div className="technical-skills">
             <h3>Technical Skills</h3>

@@ -14,7 +14,7 @@ tech:
   - Android NDK
   - Android ADT
   - Android Platform-tools
-company: 'Consultant'
+company: 'Consultant (eAKASH Inc, San Jose, CA)'
 showInProjects: true
 ---
 

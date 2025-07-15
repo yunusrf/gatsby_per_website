@@ -131,14 +131,19 @@ const StyledLinks = styled.div`
 
       a {
         padding: 10px;
-
-        &:before {
-          content: '0' counter(item) '.';
-          margin-right: 5px;
-          color: var(--green);
-          font-size: var(--fz-xxs);
-          text-align: right;
-        }
+        color: var(--lightest-slate);
+        /* Fix: In light mode, force navLinks to white for visibility on dark header */
+      }
+      /* Fix: In light mode, force navLinks to white for visibility on dark header */
+      .light-mode header nav li a {
+        color: var(--white) !important;
+      }
+      a:before {
+        content: '0' counter(item) '.';
+        margin-right: 5px;
+        color: var(--green);
+        font-size: var(--fz-xxs);
+        text-align: right;
       }
     }
   }

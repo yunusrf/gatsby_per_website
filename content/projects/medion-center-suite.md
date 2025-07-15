@@ -1,5 +1,5 @@
 ---
-date: '2010-11-01'
+date: '2009-12-01'
 title: 'MEDION Center Application Suite: Touch, Speech & Media Platform'
 github: ''
 external: ''

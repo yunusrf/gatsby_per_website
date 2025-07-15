@@ -19,7 +19,7 @@ tech:
   - Android ADT
   - Android Platform-tools
   - Git
-company: 'Consultant'
+company: 'Consultant (eAKASH Inc, San Jose, CA)'
 showInProjects: true
 ---
 
